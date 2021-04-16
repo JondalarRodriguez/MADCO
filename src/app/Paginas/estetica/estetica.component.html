@@ -1,0 +1,35 @@
+<form #servicio="ngForm" (ngSubmit)="Estetica(servicio)">
+    <div class="Centrar">
+        <div class="form-group col-12">
+            <label class="bold-font" for="exampleInputEmail1">Tipo de Servicio</label>
+            <input type="text" ngModel name="TipoServicio" #TipoServicio class="form-control text-center"
+                placeholder="Tipo de Servicio">
+        </div>
+        <div class="form-group col-12">
+            <label class="bold-font" for="exampleInputPassword1">Costo</label>
+            <input type="text" ngModel name="Costo" #Costo class="form-control text-center" placeholder="Costo">
+        </div>
+
+        <div class="form-group col-12">
+            <label class="bold-font" for="exampleInputPassword1">Como se recibe a la mascota</label>
+            <input type="text" ngModel name="DescripcionEntrada" #DescripcionEntrada class="form-control text-center"
+                placeholder="Estado">
+        </div>
+
+        <div class="form-group col-12">
+            <label class="bold-font" for="exampleInputPassword1">Como se debe entregar</label>
+            <input type="text" ngModel name="DescripcionSalida" #DescripcionSalida class="form-control text-center"
+                placeholder="Estado de salida">
+        </div>
+
+        <div class="form-group col-12">
+            <label class="bold-font" for="exampleInputPassword1">Peso</label>
+            <input type="text" ngModel name="Peso" #Peso class="form-control text-center" placeholder="Peso">
+        </div>
+
+
+
+        <button class="btn btn-primary">Ingresar</button>
+
+    </div>
+</form>

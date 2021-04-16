@@ -1,0 +1,19 @@
+<form #ParaEditar="ngForm" (ngSubmit)="GuardarEdicion(ParaEditar)">
+            
+    <input type="text" ngModel = "{{Products.nombreproducto}}" name = "NombreProducto" #NombreProducto class="Center form-control mr-sm-2"
+    style="height: 38px; width: 250px; margin-top: 20px;"  placeholder="Nombre del producto">
+  
+    <input type="text" ngModel = "{{Products.costoproducto}}"  name = "PrecioProducto" #PrecioProducto class="Center form-control mr-sm-2"
+    style="height: 38px; width: 250px; margin-top: 20px;"  placeholder="Precio del producto">
+
+    <input type="text" ngModel = "{{Products.costoproveedor}}"  name = "CostoProducto" #CostoProducto class="Center form-control mr-sm-2"
+    style="height: 38px; width: 250px; margin-top: 20px;"  placeholder="Costo del producto">
+  
+    <input type="text" ngModel = "{{Products.stock}}" name = "Stock" #Stock class="Center form-control mr-sm-2"
+    style="height: 38px; width: 250px; margin-top: 20px;"  placeholder="Stock">
+  
+  <div class="Center">
+    <button class="btn btn-info">Guardar</button>
+
+  </div>
+</form>

@@ -1,9 +1,9 @@
 footer{
-    background: black;
+    background: #ff69b4 !important;
 }
 
 .dark{
-    color: black;
+    color: white;
 }
 
 .fuenteGoogle{
@@ -18,6 +18,16 @@ nav a img {
     color: white;
 }
 
+.links{
+    color: rgb(0, 0, 141);
+}
+
 .separador{
     padding-top: 0em;
+}
+
+
+.fuentesLink{
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
 }

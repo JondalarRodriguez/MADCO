@@ -1,0 +1,132 @@
+<div class="Center">
+  <h3>
+    <img src="../assets/img/HuellaTitulo.jpeg" class="rounded-circle TamañoImg" alt="">
+    Productos Internos <span class="badge badge-secondary"></span></h3>
+</div>
+
+<div class="Container Borde">
+
+  <div class="bg">
+
+    <!--Buton modal editar-->
+    <button type="button" style="height: 38px; margin-top: 20px;" class="Center btn btn-info" data-toggle="modal"
+      data-target="#exampleModalEditar">
+      Editar
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalEditar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: hotpink;">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Agrega producto</h5>
+            <button type="btn btn-info" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-fade" style="background-image: url('/assets/img/FondoModales.jpeg');">
+
+            <form #edit="ngForm" (ngSubmit)="editando(edit)">
+              <input id="searchTerm" ngModel name="productNameSearch" #productNameSearch class="form-control mr-sm-2"
+                style="height: 38px; margin-top: 20px;" type="search text" placeholder="Buscar" aria-label="Search">
+
+              <button class="btn btn-info my-2 my-sm-0 Buscar" style="height: 38px" type="submit">
+                Buscar</button>
+
+            </form>
+
+
+          </div>
+          <div class="modal-footer" style="background-color: hotpink;">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Button trigger modal -->
+    <button type="button" style="height: 38px; margin-top: 20px;" class="Center btn btn-info" data-toggle="modal"
+      data-target="#exampleModalAgregar">
+      Agregar
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalAgregar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: hotpink;">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Agrega producto</h5>
+            <button type="btn btn-info" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-fade" style="background-image: url('/assets/img/FondoModales.jpeg');">
+
+            <form #agregando="ngForm" (ngSubmit)="agregandoProducto(agregando)">
+
+              <input type="text" ngModel name="NombreProducto" #NombreProducto
+                class="Center form-control mr-sm-2" style="height: 38px; width: 250px; margin-top: 20px;"
+                placeholder="Nombre del producto">
+
+              <input type="text" ngModel name="CostoProducto" #CostoProducto
+                class="Center form-control mr-sm-2" style="height: 38px; width: 250px; margin-top: 20px;"
+                placeholder="Precio del producto">
+
+              <input type="text" ngModel name="stock" #stock class="Center form-control mr-sm-2"
+                style="height: 38px; width: 250px; margin-top: 20px;" placeholder="Stock">
+
+              <input type="text" ngModel name="fechadecompra" #fechadecompra
+                class="Center form-control mr-sm-2" style="height: 38px; width: 250px; margin-top: 20px;"
+                placeholder="Fecha del Producto">
+
+              <div class="Center">
+                <button class="btn btn-info">Agregar</button>
+
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer" style="background-color: hotpink;">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+
+          </div>
+
+          </div>
+          </div>
+          </div>
+
+          
+
+
+
+        </div>
+
+
+        <table class="table table-dark">
+          <thead>
+            <tr>
+
+              <th scope="col">Productos</th>
+              <th scope="col">Costo</th>
+              <th scope="col">Stock</th>
+              <th scope="col">Fecha de compra</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let Item of Iproducts">
+
+              <td>{{Item.nombrepi}}</td>
+              <td>{{Item.costo}}</td>
+              <td>{{Item.stock}}</td>
+              <td>{{Item.fechadeComprapi}}</td>
+            </tr>
+
+          </tbody>
+        </table>

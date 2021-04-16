@@ -1,0 +1,28 @@
+.Rosa{
+background: #ff69b4 !important;    
+opacity: 0.89 !important;
+}
+    
+
+.Tamaño{
+    width: 200 px;
+}
+
+.Borde{
+    margin-left: 15em !important;
+    margin-right: 15em !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.bg{
+    padding-left: 35% !important;
+ }
+.Center{
+    margin: 20px !important; 
+}
+
+.TamañoImg{
+    width: 20px;
+    height: 20px;      
+}

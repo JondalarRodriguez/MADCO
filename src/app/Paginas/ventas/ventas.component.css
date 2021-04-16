@@ -1,0 +1,83 @@
+ .bg{
+    display: flex;
+    justify-content: center; }
+.Center{
+    margin: 20px !important;
+    
+}
+
+.Borde{
+    margin-left: 20em !important;
+    margin-right: 20em !important;
+}
+
+
+.text{
+    color: skyblue;
+    
+}
+
+.Buscar{
+    margin-top: 20px !important;
+}
+
+.Estetica{
+  margin-top: 15px !important;
+  padding-left: 30px !important;
+
+}
+.Corte{
+   color: white !important;
+} 
+.nada{
+   background: #68e885 !important;
+}
+.TamañoImg{
+    width: 20px;
+    height: 20px;      
+}
+
+            .a{
+                 padding-top: 8em;
+                 width: 2em !important;
+                 width: 22% !important;
+                 padding: 17px;
+                 width: 300px;
+                 position: absolute;
+                 top: 90%;
+                 left: 60%;
+                transform: translate(-50%,-50% );
+            
+        
+    
+}
+
+div div h6{
+    font-size: 1.5em !important;
+}
+
+
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container{
+    
+    padding: 17px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50% );
+}
+
+@media(max-width: 400px){
+    .container{
+        width: 90%;
+    }
+}
+
